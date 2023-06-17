@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,11 @@
 }
 
 :root {
+  font-family: "Dancing Script", cursive;
   font-family: "DM Sans", sans-serif;
+  font-family: "Exo", sans-serif;
   font-family: "Montserrat", sans-serif;
+  font-family: "Permanent Marker", cursive;
   font-family: "Roboto", sans-serif;
 }
 body {
@@ -17,4 +22,115 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+/* main div */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 900px;
+  height: 750px;
+  overflow: hidden;
+}
+
+/* logo */
+.logo-main {
+  font-family: "Permanent Marker", cursive;
+  color: rgb(142, 196, 27);
+}
+.logo-span {
+  font-family: "DM Sans", sans-serif;
+  color: rgb(45, 14, 14);
+}
+
+/* progress */
+.progress,
+.progress-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.progress-div {
+  flex-direction: row;
+  padding: 10px 20px;
+  margin-top: 5px;
+  transition: 0.3s all;
+}
+.btn-progress {
+  border: 2px solid rgb(128, 128, 128, 0.1);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  font-size: 15px;
+}
+/* divider */
+.divider {
+  height: 3px;
+  background-color: rgb(170, 175, 170, 0.3);
+  width: 200px;
+  border-radius: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 19px;
+}
+.btn-progress.active {
+  border: none;
+  color: #fff;
+  background-color: rgb(0, 128, 0);
+  font-weight: 900;
+}
+.divider.active {
+  height: 4px;
+  background-color: rgb(0, 128, 0);
+  border-radius: 2px;
+}
+
+/* cart */
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+img {
+  width: 280px;
+}
+.item-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.price {
+  padding: 5px 0px;
+  color: green;
+  font-size: 25px;
+}
+.item-description {
+  /* margin-top: 1px; */
+}
+.features-key {
+  padding: 5px 0px;
+}
+.features-list {
+  /* color: red; */
+  padding: 5px 40px;
+  text-align: start;
+  font-size: 14px;
+}
+
+/* checkout div */
+.topay {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+.subtotal, .shipping {
+    display: flex;
+    justify-content: space-between;
 }
