@@ -33,7 +33,7 @@ main {
   border: none;
   border-radius: 20px;
   width: 900px;
-  height: 750px;
+  height: 780px;
   overflow: hidden;
 }
 
@@ -60,6 +60,7 @@ main {
   flex-direction: row;
   padding: 10px 20px;
   margin-top: 5px;
+  margin-bottom: 5px;
   transition: 0.3s all;
 }
 .btn-progress {
@@ -98,6 +99,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-top: 5px;
+  margin-bottom: 5px;
 }
 img {
   width: 280px;
@@ -125,12 +127,70 @@ img {
 }
 
 /* checkout div */
+.checkout {
+  width: 450px;
+}
 .topay {
   background-color: aliceblue;
   padding: 20px;
   border-radius: 10px;
 }
-.subtotal, .shipping {
-    display: flex;
-    justify-content: space-between;
+.subtotal,
+.shipping {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.total,
+.subtotal-amount {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(100, 127, 65);
+}
+.subtotal-amount {
+  justify-content: right;
+}
+.taxes {
+  color: rgb(53, 57, 57);
+  font-size: 10px;
+  text-align: right;
+}
+.payment-methods {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+.img-card {
+  margin: 5px;
+  width: 35px;
+  /* height: 35px; */
+  background-color: #fff;
+  color: #fff;
+}
+.proceed-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-proceed {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: rgb(66, 113, 154);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.total-divider {
+  height: 1px;
+  background-color: grey;
+  margin: 10px 0;
+}
+.btn-proceed:hover {
+  border: 1.5px solid grey;
+  background-color: #fff;
+  font-size: 21px;
+  padding: 10.5px 30.5px;
+  color: green;
 }
