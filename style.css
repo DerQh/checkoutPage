@@ -179,6 +179,7 @@ img {
   font-size: 20px;
   color: rgb(66, 113, 154);
   border-radius: 6px;
+  width: 200px;
   border: none;
   cursor: pointer;
 }
