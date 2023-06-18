@@ -17,13 +17,19 @@ progresBtnEl.forEach(function (btn) {
     if (event.target.classList.contains("one")) {
       event.target.classList.toggle("active");
       document.querySelector(".two").classList.toggle("active");
+      document.querySelector(".three").classList.toggle("active");
+      document.querySelector(".four").classList.toggle("active");
     } else if (event.target.classList.contains("three")) {
       event.target.classList.toggle("active");
+      document.querySelector(".one").classList.toggle("active");
+      document.querySelector(".two").classList.toggle("active");
       document.querySelector(".four").classList.toggle("active");
     } else {
-      document.querySelector(".four").classList.add("active");
-      document.querySelector(".two").classList.add("active");
-      event.target.classList.add("active");
+      document.querySelector(".one").classList.toggle("active");
+      document.querySelector(".three").classList.toggle("active");
+      document.querySelector(".four").classList.toggle("active");
+      document.querySelector(".two").classList.toggle("active");
+      event.target.classList.toggle("active");
     }
   });
 });
